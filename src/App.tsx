@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import PrimeGenerator from './pages/PrimeGenerator';
+import Home from "./pages/Home";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -35,7 +36,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<h1>Numbers Lab</h1>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/prime-number-generator" element={<PrimeGenerator />} />
       </Routes>
     </HashRouter>
