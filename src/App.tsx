@@ -35,6 +35,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
+        <Route path="/" element={<h1>Numbers Lab</h1>} />
         <Route path="/prime-number-generator" element={<PrimeGenerator />} />
       </Routes>
     </HashRouter>
