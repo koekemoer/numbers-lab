@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import PrimeGenerator from './pages/PrimeGenerator';
 
@@ -33,11 +33,11 @@ import PrimeGenerator from './pages/PrimeGenerator';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/prime-number-generator" element={<PrimeGenerator />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
