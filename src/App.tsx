@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import PrimeGenerator from './pages/PrimeGenerator';
 
