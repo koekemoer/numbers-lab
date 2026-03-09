@@ -1,24 +1,24 @@
 import { useState } from "react";
 
-function generatePrimes(limit: number): number[] {
-    const primes: number[] = [];
+// function generatePrimes(limit: number): number[] {
+//     const primes: number[] = [];
 
-    for (let num = 2; num <= limit; num++) {
-        let isPrime = true;
+//     for (let num = 2; num <= limit; num++) {
+//         let isPrime = true;
 
-        for (let i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i === 0) {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime) {
-            primes.push(num);
-        }
-    }
+//         for (let i = 2; i <= Math.sqrt(num); i++) {
+//             if (num % i === 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if (isPrime) {
+//             primes.push(num);
+//         }
+//     }
 
-    return primes;
-}
+//     return primes;
+// }
 
 function sieve(limit: number): number[] {
     const sieve = new Array(limit + 1).fill(true);
