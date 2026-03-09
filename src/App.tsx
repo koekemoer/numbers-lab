@@ -2,6 +2,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import PrimeGenerator from './pages/PrimeGenerator';
 import Home from "./pages/Home";
+import FibonacciCalculator from "./pages/FibonacciCalculator";
+import BaseConverter from "./pages/BaseConverter";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -38,6 +40,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/prime-number-generator" element={<PrimeGenerator />} />
+        <Route path="/fibonacci-calculator"  element={<FibonacciCalculator />} />
+        <Route path="/base-converter" element={<BaseConverter />} />
       </Routes>
     </HashRouter>
   );

@@ -11,6 +11,16 @@ function Home() {
             Prime Number Generator
           </Link>
         </li>
+        <li>
+          <Link to="/fibonacci-calculator">
+            Fibonacci Calculator
+          </Link>
+        </li>
+        <li>
+          <Link to="/base-converter">
+            Base Converter
+          </Link>
+        </li>
       </ul>
     </div>
   );
